@@ -1,0 +1,65 @@
+model:
+  multilabel: true
+  resnet_version: 50
+  initial_model: null
+
+
+
+crop_size: 120
+in_memory: true
+num_workers: 2
+
+carga_mask: true
+
+learning_rate: 0.01
+
+warmup: 3
+unfreeze_epoch: 7
+
+
+# Defectos
+defect_types:
+- agostado
+- envero
+- escudete
+- molestadograve
+- molestadoleve
+- negra_morada
+
+#Regularization
+weights_decay: 0.001
+mixup_alpha: 0.2
+label_smoothing: 0.1
+p_dropout: 0.5
+
+
+#logging
+log_name: morada_negra_2022_2023
+wandb_project: WANDB_Olives_MultiSpectral_Multilabel
+
+
+#data
+root_folder: mscanData/pngs_anotados/Smart4Olives/
+max_value: 1024
+
+train_dataplaces:
+- !!python/tuple
+  - season_2022/manzanilla/Season_oct_2022_set01_rev1/split_jsons/train
+  - season_2022/manzanilla/Season_oct_2022_set01_rev1/images
+- !!python/tuple
+  - season_2023/ANOTADAS_IRENE/all/manzanilla/split_jsons/train
+  - season_2023/ANOTADAS_IRENE/all/manzanilla/images
+
+
+val_dataplaces:
+- !!python/tuple
+  - season_2022/manzanilla/Season_oct_2022_set01_rev1/split_jsons/val
+  - season_2022/manzanilla/Season_oct_2022_set01_rev1/images  
+- !!python/tuple
+  - season_2023/ANOTADAS_IRENE/all/manzanilla/split_jsons/val
+  - season_2023/ANOTADAS_IRENE/all/manzanilla/images
+
+
+#out
+save_path: ./out_models/
+model_name: Olives_Multilabel_2022_2023_morada_negra.ckpt
