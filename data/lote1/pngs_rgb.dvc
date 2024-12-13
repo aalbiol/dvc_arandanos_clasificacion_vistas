@@ -1,0 +1,6 @@
+outs:
+- md5: c2b3103a8151440abaf061037c31ed5c.dir
+  size: 27439590
+  nfiles: 412
+  hash: md5
+  path: pngs_rgb
