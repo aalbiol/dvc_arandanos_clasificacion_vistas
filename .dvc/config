@@ -1,2 +1,6 @@
 [core]
     autostage = true
+    remote = rasp4remote
+['remote "rasp4remote"']
+    url = webdavs://nube14.duckdns.org/remote.php/dav/files/dvcremote/datasets/arandanos
+    ssl_verify = false
