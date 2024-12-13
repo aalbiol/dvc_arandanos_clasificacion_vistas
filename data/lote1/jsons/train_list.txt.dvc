@@ -1,5 +1,0 @@
-outs:
-- md5: e5922d694e26a0ade9ff8d3cb8dee7f2
-  size: 21096
-  hash: md5
-  path: train_list.txt
