@@ -9,7 +9,7 @@ Luego para usar el entorno
 conda activate mscandvc
 ```
 
-# dvc_clasificacion_olivas
+# dvc_clasificacion_Arandanos
 
 Datos y pipelines para clasificar vistas de olivas
 
@@ -35,6 +35,12 @@ dvc remote modify --local rasp4remote password Cocentaina
 ______________________________________________________
 
 # Procedimientos manuales
+
+## Split Train-Val
+
+```
+ python ../src_clasificacion_vistas/data/MIL_split_train_val.py config/config1.yaml
+```
 
 ## Para entrenar a mano
 

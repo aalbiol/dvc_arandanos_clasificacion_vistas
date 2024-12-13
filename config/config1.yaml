@@ -1,48 +1,108 @@
 data:
   prob_train: 0.8
-  crop_size:
-  - 120
-  - 120
+  crop_size: null
+  
+  training_size:
+  - 110
+  - 110
   delimiter: _
   maxvalues:
-  - 1024
-  root_folder: ../dvc_olivas_clasificacion_vistas/data
-  terminaciones:
-  - _r.png
-  - _g.png
-  - _b.png
-  - _a.png
-  - _nir.png
-  - _nir1.png
-  - _nir2.png
-  - _nir4.png
+  - 255
+  root_folder: data
+  terminaciones: null # Para cimgs todos los canales van en un solo archivo .cimg
+  channel_list:
+  - 0 #R
+  - 1 #G
+  - 2 #B
+  - 3 #NIR
+
   train:
   - - train_list.txt
-    - 2022/jsons
-    - 2022/images
-  # - - train_list.txt
-  #   - 2023/jsons
-  #   - 2023/images    
+    - lote1/jsons
+    - lote1/images
+  - - train_list.txt
+    - lote2/20230419_100534_BuenoEncoder/jsons  
+    - lote2/20230419_100534_BuenoEncoder/imags
+  - - train_list.txt
+    - lote2/20230419_112500_BuenoEncoder/jsons  
+    - lote2/20230419_112500_BuenoEncoder/imags
+  - - train_list.txt
+    - lote2/20230419_113002_LagrimaEncoder/jsons  
+    - lote2/20230419_113002_LagrimaEncoder/imags
+  - - train_list.txt
+    - lote2/20230419_114356_CicatrizDefSupEncoder/jsons  
+    - lote2/20230419_114356_CicatrizDefSupEncoder/imags
+  - - train_list.txt
+    - lote2/20230419_115102_HojaRaboConDeformeEncoder/jsons  
+    - lote2/20230419_115102_HojaRaboConDeformeEncoder/imags
+  - - train_list.txt
+    - lote2/20230419_115631_DestrioRotaEncoder/jsons  
+    - lote2/20230419_115631_DestrioRotaEncoder/imags
+  - - train_list.txt
+    - lote2/20230419_120236_DeformesDoblesEncoder/jsons  
+    - lote2/20230419_120236_DeformesDoblesEncoder/imags
+  - - train_list.txt
+    - lote2/20230419_122046ArrugadoEncoder/jsons  
+    - lote2/20230419_122046ArrugadoEncoder/imags
+  - - train_list.txt
+    - lote2/20230419_121536_BlandoEncoder/jsons  
+    - lote2/20230419_121536_BlandoEncoder/imags
+  - - train_list.txt
+    - lote2/20230419_122528_VerdeRojoEncoder/jsons  
+    - lote2/20230419_122528_VerdeRojoEncoder/imags    
+
+  
 
   val:
   - - val_list.txt
-    - 2022/jsons
-    - 2022/images
-  # - - val_list.txt
-  #   - 2023/jsons
-  #   - 2023/images        
+    - lote1/jsons
+    - lote1/images
+  - - val_list.txt
+    - lote2/20230419_100534_BuenoEncoder/jsons  
+    - lote2/20230419_100534_BuenoEncoder/imags
+  - - val_list.txt
+    - lote2/20230419_112500_BuenoEncoder/jsons  
+    - lote2/20230419_112500_BuenoEncoder/imags
+  - - val_list.txt
+    - lote2/20230419_113002_LagrimaEncoder/jsons  
+    - lote2/20230419_113002_LagrimaEncoder/imags
+  - - val_list.txt
+    - lote2/20230419_114356_CicatrizDefSupEncoder/jsons  
+    - lote2/20230419_114356_CicatrizDefSupEncoder/imags
+  - - val_list.txt
+    - lote2/20230419_115102_HojaRaboConDeformeEncoder/jsons  
+    - lote2/20230419_115102_HojaRaboConDeformeEncoder/imags
+  - - val_list.txt
+    - lote2/20230419_115631_DestrioRotaEncoder/jsons  
+    - lote2/20230419_115631_DestrioRotaEncoder/imags
+  - - val_list.txt
+    - lote2/20230419_120236_DeformesDoblesEncoder/jsons  
+    - lote2/20230419_120236_DeformesDoblesEncoder/imags
+  - - val_list.txt
+    - lote2/20230419_122046ArrugadoEncoder/jsons  
+    - lote2/20230419_122046ArrugadoEncoder/imags
+  - - val_list.txt
+    - lote2/20230419_121536_BlandoEncoder/jsons  
+    - lote2/20230419_121536_BlandoEncoder/imags
+  - - val_list.txt
+    - lote2/20230419_122528_VerdeRojoEncoder/jsons  
+    - lote2/20230419_122528_VerdeRojoEncoder/imags           
 
 model:
   defect_types:
-  - agostado
-  - envero
-  - escudete
-  - molestadograve
-  - molestadoleve
-  - negra_morada
-  multilabel: true
+  - Blandos
+  - Cicatrices
+  - defectos_severos
+  - Deformes
+  - Deshidratado
+  - Flor_seca
+  - Lagrima
+  - Rabos
+  - Rojos
+  - Verdes
   num_channels_input: 8
-  #resnet_version: 50
+  model_version: 50
+
 train:
   batch_size: 60
   epochs: 40
@@ -50,11 +110,10 @@ train:
   initial_model: null
   label_smoothing: 0.1
   learning_rate: 0.01
-  mixup_alpha: 0.2
   optimizer: adam
   num_workers: -1
   output:
-    model_file: olives_Multilabel_2022_2023_morada_negra.pkl
+    model_file: arandanos_lote1.pkl
     path: out_models
   p_dropout: 0.5 
   unfreeze_epoch: 6
@@ -96,8 +155,8 @@ evaluate:
 
 predict:
   model_dir: out_models
-  model_file: olives_Multilabel_2022_2023_morada_negra.pkl
-  patron: "*_r.png"
+  model_file: arandanos_lote1.pkl
+  patron: "*.cimg"
   
   report_dir: out_predict
     
