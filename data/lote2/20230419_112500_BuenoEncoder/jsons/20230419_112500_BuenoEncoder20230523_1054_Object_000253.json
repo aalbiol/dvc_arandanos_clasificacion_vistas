@@ -1,0 +1,23 @@
+{
+    "batchName": "Name",
+    "batchType": "Type",
+    "batchOrigin": "Origin",
+    "annotations": {
+        "Blandos": 0,
+        "Verdes": 0,
+        "Rajas": 0,
+        "Cicatrices": 0,
+        "defectos_severos": 0,
+        "Deformes": 0,
+        "Dobles": 0,
+        "Flor_seca": 0,
+        "Deshidratado": 0,
+        "Lagrima": 0,
+        "Rabos": 0,
+        "Rojos": 0
+    },
+    "files": {
+        "0": "20230419_112500_BuenoEncoder20230523_1054_Object_000253.cimg",
+        "1": "20230419_112500_BuenoEncoder20230523_1054_Object_000253.png"
+    }
+}

@@ -1,0 +1,6 @@
+outs:
+- md5: 0ff7339a6b5978c5235a72f3ee836e56.dir
+  size: 13427996
+  nfiles: 46
+  hash: md5
+  path: pngs
