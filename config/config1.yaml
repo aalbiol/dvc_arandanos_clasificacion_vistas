@@ -1,0 +1,103 @@
+data:
+  prob_train: 0.8
+  crop_size:
+  - 120
+  - 120
+  delimiter: _
+  maxvalues:
+  - 1024
+  root_folder: ../dvc_olivas_clasificacion_vistas/data
+  terminaciones:
+  - _r.png
+  - _g.png
+  - _b.png
+  - _a.png
+  - _nir.png
+  - _nir1.png
+  - _nir2.png
+  - _nir4.png
+  train:
+  - - train_list.txt
+    - 2022/jsons
+    - 2022/images
+  # - - train_list.txt
+  #   - 2023/jsons
+  #   - 2023/images    
+
+  val:
+  - - val_list.txt
+    - 2022/jsons
+    - 2022/images
+  # - - val_list.txt
+  #   - 2023/jsons
+  #   - 2023/images        
+
+model:
+  defect_types:
+  - agostado
+  - envero
+  - escudete
+  - molestadograve
+  - molestadoleve
+  - negra_morada
+  multilabel: true
+  num_channels_input: 8
+  #resnet_version: 50
+train:
+  batch_size: 60
+  epochs: 40
+  in_memory: true
+  initial_model: null
+  label_smoothing: 0.1
+  learning_rate: 0.01
+  mixup_alpha: 0.2
+  optimizer: adam
+  num_workers: -1
+  output:
+    model_file: olives_Multilabel_2022_2023_morada_negra.pkl
+    path: out_models
+  p_dropout: 0.5 
+  unfreeze_epoch: 6
+  warmup: 3
+  weights_decay: 0.001
+  augmentation:
+    random_rotation: 30
+    brightness: 
+    - 0.8
+    - 1.4
+    contrast:
+    - 0.8
+    - 1.55
+    hue: 0.01
+    saturation: 0.15
+    blur:
+    - 0.1
+    - 1.5
+    affine:
+      scale:
+      - 0.7
+      - 1.1
+      shear: 15
+      translate: 
+      - 0.15
+      - 0.15
+      degrees: 30
+
+evaluate:
+  batch_size: 60
+  model_dir: out_models
+  model_file: olives_Multilabel_2022_2023_morada_negra.pkl
+  
+  report_dir: out_evaluate
+  train_predictions: train_scores.json
+  val_predictions: val_scores.json
+  aucs: aucs.json
+
+
+predict:
+  model_dir: out_models
+  model_file: olives_Multilabel_2022_2023_morada_negra.pkl
+  patron: "*_r.png"
+  
+  report_dir: out_predict
+    
