@@ -1,10 +1,10 @@
 stages:
   split_train_val:
-    cmd: python ../src_clasificacion_vistas/data/MIL_split_train_val.py config/config1.yaml
+    cmd: python ../src_clasificacion_vistas/data/MIL_split_train_val.py config/config2.yaml
     deps:
     - ../src_clasificacion_vistas/data/MIL_split_train_val.py
     params:
-    - config/config1.yaml:
+    - config/config2.yaml:
       - data
     outs:
     - data/lote1/jsons/train_list.txt:
