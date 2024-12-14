@@ -56,7 +56,7 @@ stages:
 
 
   train:
-    cmd: python ../src_clasificacion_vistas/data/MIL_split_train_val.py config/config1.yaml
+    cmd: python ../src_clasificacion_vistas/train/trainMIL.py --config config/config2.yaml
     deps:
     - ../src_clasificacion_vistas/train/trainMIL.py
     # - data/2022/jsons/train_list.txt    
@@ -65,38 +65,38 @@ stages:
     # - data/2023/jsons/val_list.txt
 
     params:
-    - config/config1.yaml:
+    - config/config2.yaml:
       - data
       - train
       - model 	
     outs:
-    - out_models/olives_Multilabel_2022_2023_morada_negra.pkl
+    - out_models/arandanos2.pkl
 
-  evaluate:
-    cmd: python ../src_clasificacion_vistas/evaluate/evaluate.py --config config/config1.yaml
-    deps:
-    - ../src_clasificacion_vistas/evaluate/evaluate.py
-    - out_models/olives_Multilabel_2022_2023_morada_negra.pkl    
-    params:
-    - config/config1.yaml:
-      - data
-      - evaluate
-      - model 	
-    outs:
-    - out_evaluate/aucs.json
-    - out_evaluate/train_scores.json
-    - out_evaluate/val_scores.json
+#   evaluate:
+#     cmd: python ../src_clasificacion_vistas/evaluate/evaluate.py --config config/config1.yaml
+#     deps:
+#     - ../src_clasificacion_vistas/evaluate/evaluate.py
+#     - out_models/olives_Multilabel_2022_2023_morada_negra.pkl    
+#     params:
+#     - config/config1.yaml:
+#       - data
+#       - evaluate
+#       - model 	
+#     outs:
+#     - out_evaluate/aucs.json
+#     - out_evaluate/train_scores.json
+#     - out_evaluate/val_scores.json
   
-  report:
-    cmd: jupyter nbconvert --to notebook --execute --inplace reports/analisis_prestaciones.ipynb
-    deps:
-    - reports/analisis_prestaciones.ipynb
-    - out_evaluate/aucs.json
-    - out_evaluate/train_scores.json
-    - out_evaluate/val_scores.json    
-    outs:
-    - reports/analisis_prestaciones.ipynb
+#   report:
+#     cmd: jupyter nbconvert --to notebook --execute --inplace reports/analisis_prestaciones.ipynb
+#     deps:
+#     - reports/analisis_prestaciones.ipynb
+#     - out_evaluate/aucs.json
+#     - out_evaluate/train_scores.json
+#     - out_evaluate/val_scores.json    
+#     outs:
+#     - reports/analisis_prestaciones.ipynb
 
-  pred
+
   
 

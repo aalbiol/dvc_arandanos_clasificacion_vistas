@@ -1,0 +1,335 @@
+schema: '2.0'
+stages:
+  split_train_val:
+    cmd: python ../src_clasificacion_vistas/data/MIL_split_train_val.py config/config1.yaml
+    deps:
+    - path: ../src_clasificacion_vistas/data/MIL_split_train_val.py
+      hash: md5
+      md5: b3be3970942d8e0999e7c50cf84801b7
+      size: 2579
+    params:
+      config/config1.yaml:
+        data:
+          prob_train: 0.8
+          crop_size:
+          training_size:
+          - 110
+          - 110
+          delimiter: _
+          maxvalues:
+          - 255
+          root_folder: data
+          terminaciones:
+          channel_list:
+          - 0
+          - 1
+          - 2
+          - 3
+          train:
+          - - train_list.txt
+            - lote1/jsons
+            - lote1/images
+          - - train_list.txt
+            - lote2/20230419_100534_BuenoEncoder/jsons
+            - lote2/20230419_100534_BuenoEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_112500_BuenoEncoder/jsons
+            - lote2/20230419_112500_BuenoEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_113002_LagrimaEncoder/jsons
+            - lote2/20230419_113002_LagrimaEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_114356_CicatrizDefSupEncoder/jsons
+            - lote2/20230419_114356_CicatrizDefSupEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_115102_HojaRaboConDeformeEncoder/jsons
+            - lote2/20230419_115102_HojaRaboConDeformeEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_115631_DestrioRotaEncoder/jsons
+            - lote2/20230419_115631_DestrioRotaEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_120236_DeformesDoblesEncoder/jsons
+            - lote2/20230419_120236_DeformesDoblesEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_122046ArrugadoEncoder/jsons
+            - lote2/20230419_122046ArrugadoEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_121536_BlandoEncoder/jsons
+            - lote2/20230419_121536_BlandoEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_122528_VerdeRojoEncoder/jsons
+            - lote2/20230419_122528_VerdeRojoEncoder/imags
+          val:
+          - - val_list.txt
+            - lote1/jsons
+            - lote1/images
+          - - val_list.txt
+            - lote2/20230419_100534_BuenoEncoder/jsons
+            - lote2/20230419_100534_BuenoEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_112500_BuenoEncoder/jsons
+            - lote2/20230419_112500_BuenoEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_113002_LagrimaEncoder/jsons
+            - lote2/20230419_113002_LagrimaEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_114356_CicatrizDefSupEncoder/jsons
+            - lote2/20230419_114356_CicatrizDefSupEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_115102_HojaRaboConDeformeEncoder/jsons
+            - lote2/20230419_115102_HojaRaboConDeformeEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_115631_DestrioRotaEncoder/jsons
+            - lote2/20230419_115631_DestrioRotaEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_120236_DeformesDoblesEncoder/jsons
+            - lote2/20230419_120236_DeformesDoblesEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_122046ArrugadoEncoder/jsons
+            - lote2/20230419_122046ArrugadoEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_121536_BlandoEncoder/jsons
+            - lote2/20230419_121536_BlandoEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_122528_VerdeRojoEncoder/jsons
+            - lote2/20230419_122528_VerdeRojoEncoder/imags
+    outs:
+    - path: data/lote1/jsons/train_list.txt
+      hash: md5
+      md5: 3332621dbb013eeda586221a696f0168
+      size: 21121
+    - path: data/lote1/jsons/val_list.txt
+      hash: md5
+      md5: 577baece5dba08d7749fe0361ad9723f
+      size: 5338
+    - path: data/lote2/20230419_100534_BuenoEncoder/jsons/train_list.txt
+      hash: md5
+      md5: 9fcf54d50f142dac4ceb4b931fc8c991
+      size: 30073
+    - path: data/lote2/20230419_100534_BuenoEncoder/jsons/val_list.txt
+      hash: md5
+      md5: 1e9f55e4feecf821da80678b97af5779
+      size: 7564
+    - path: data/lote2/20230419_112500_BuenoEncoder/jsons/train_list.txt
+      hash: md5
+      md5: dd1dd7708a75406eaa50d2583761617f
+      size: 18788
+    - path: data/lote2/20230419_112500_BuenoEncoder/jsons/val_list.txt
+      hash: md5
+      md5: 6aee28638abd45868f40c4972e498053
+      size: 4697
+    - path: data/lote2/20230419_113002_LagrimaEncoder/jsons/train_list.txt
+      hash: md5
+      md5: e6a6854ee05c82e9acd9a693a85def49
+      size: 2268
+    - path: data/lote2/20230419_113002_LagrimaEncoder/jsons/val_list.txt
+      hash: md5
+      md5: dadfc5a1cbf7f1879b0cc82efa0a5cff
+      size: 630
+    - path: data/lote2/20230419_114356_CicatrizDefSupEncoder/jsons/train_list.txt
+      hash: md5
+      md5: 7aebb670e05cbfeb5aea54c1ecf25aa6
+      size: 15400
+    - path: data/lote2/20230419_114356_CicatrizDefSupEncoder/jsons/val_list.txt
+      hash: md5
+      md5: 097eb633f44401ce6e9fb3860678462a
+      size: 3920
+    - path: data/lote2/20230419_115102_HojaRaboConDeformeEncoder/jsons/train_list.txt
+      hash: md5
+      md5: 9c7bbf414bbe5c60830e43d22596947f
+      size: 20054
+    - path: data/lote2/20230419_115102_HojaRaboConDeformeEncoder/jsons/val_list.txt
+      hash: md5
+      md5: f378d718ea8d546c73a74c7ea96ad75c
+      size: 5032
+    - path: data/lote2/20230419_115631_DestrioRotaEncoder/jsons/train_list.txt
+      hash: md5
+      md5: 326a004e9a14a7d9f071b482240972ff
+      size: 1809
+    - path: data/lote2/20230419_115631_DestrioRotaEncoder/jsons/val_list.txt
+      hash: md5
+      md5: 9d09f134c1ee718907a743e148e4a1b3
+      size: 469
+    - path: data/lote2/20230419_120236_DeformesDoblesEncoder/jsons/train_list.txt
+      hash: md5
+      md5: 5dcc3ba4529e0148ef67c8e7fd73428e
+      size: 2100
+    - path: data/lote2/20230419_120236_DeformesDoblesEncoder/jsons/val_list.txt
+      hash: md5
+      md5: 8b83c1000b32860b49dd5b286e0f9229
+      size: 560
+    - path: data/lote2/20230419_121536_BlandoEncoder/jsons/train_list.txt
+      hash: md5
+      md5: 96c1dc311639c59cb2b334c6e4dbf3a1
+      size: 4588
+    - path: data/lote2/20230419_121536_BlandoEncoder/jsons/val_list.txt
+      hash: md5
+      md5: ff988c5c206e39d82fe256aa8d15f98c
+      size: 1178
+    - path: data/lote2/20230419_122046ArrugadoEncoder/jsons/train_list.txt
+      hash: md5
+      md5: a9e0077c0a8da8bf055991ff142198eb
+      size: 6867
+    - path: data/lote2/20230419_122046ArrugadoEncoder/jsons/val_list.txt
+      hash: md5
+      md5: df13c59b52fdc3ebbb7c98483a5a0145
+      size: 1764
+    - path: data/lote2/20230419_122528_VerdeRojoEncoder/jsons/train_list.txt
+      hash: md5
+      md5: 77e42c02416fa80e59d4f37624e120dc
+      size: 1885
+    - path: data/lote2/20230419_122528_VerdeRojoEncoder/jsons/val_list.txt
+      hash: md5
+      md5: 92b78d9ed504ee6c62231ddf39955d09
+      size: 520
+  train:
+    cmd: python ../src_clasificacion_vistas/train/trainMIL.py --config config/config2.yaml
+    deps:
+    - path: ../src_clasificacion_vistas/train/trainMIL.py
+      hash: md5
+      md5: 9f6c579e72675a6bb660b3d9d63b2b20
+      size: 5829
+    params:
+      config/config2.yaml:
+        data:
+          prob_train: 0.8
+          crop_size:
+          training_size:
+          - 110
+          - 110
+          delimiter: _
+          maxvalues:
+          - 255
+          root_folder: data
+          terminaciones:
+          channel_list:
+          - 0
+          - 1
+          - 2
+          - 3
+          train:
+          - - train_list.txt
+            - lote1/jsons
+            - lote1/images
+          - - train_list.txt
+            - lote2/20230419_100534_BuenoEncoder/jsons
+            - lote2/20230419_100534_BuenoEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_112500_BuenoEncoder/jsons
+            - lote2/20230419_112500_BuenoEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_113002_LagrimaEncoder/jsons
+            - lote2/20230419_113002_LagrimaEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_114356_CicatrizDefSupEncoder/jsons
+            - lote2/20230419_114356_CicatrizDefSupEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_115102_HojaRaboConDeformeEncoder/jsons
+            - lote2/20230419_115102_HojaRaboConDeformeEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_115631_DestrioRotaEncoder/jsons
+            - lote2/20230419_115631_DestrioRotaEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_120236_DeformesDoblesEncoder/jsons
+            - lote2/20230419_120236_DeformesDoblesEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_122046ArrugadoEncoder/jsons
+            - lote2/20230419_122046ArrugadoEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_121536_BlandoEncoder/jsons
+            - lote2/20230419_121536_BlandoEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_122528_VerdeRojoEncoder/jsons
+            - lote2/20230419_122528_VerdeRojoEncoder/imags
+          val:
+          - - val_list.txt
+            - lote1/jsons
+            - lote1/images
+          - - val_list.txt
+            - lote2/20230419_100534_BuenoEncoder/jsons
+            - lote2/20230419_100534_BuenoEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_112500_BuenoEncoder/jsons
+            - lote2/20230419_112500_BuenoEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_113002_LagrimaEncoder/jsons
+            - lote2/20230419_113002_LagrimaEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_114356_CicatrizDefSupEncoder/jsons
+            - lote2/20230419_114356_CicatrizDefSupEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_115102_HojaRaboConDeformeEncoder/jsons
+            - lote2/20230419_115102_HojaRaboConDeformeEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_115631_DestrioRotaEncoder/jsons
+            - lote2/20230419_115631_DestrioRotaEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_120236_DeformesDoblesEncoder/jsons
+            - lote2/20230419_120236_DeformesDoblesEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_122046ArrugadoEncoder/jsons
+            - lote2/20230419_122046ArrugadoEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_121536_BlandoEncoder/jsons
+            - lote2/20230419_121536_BlandoEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_122528_VerdeRojoEncoder/jsons
+            - lote2/20230419_122528_VerdeRojoEncoder/imags
+        model:
+          defect_types:
+          - Blandos
+          - Cicatrices
+          - defectos_severos
+          - Deformes
+          - Deshidratado
+          - Flor_seca
+          - Lagrima
+          - Rabos
+          - Rojos
+          - Verdes
+          num_channels_input: 4
+          model_version: 50
+        train:
+          batch_size: 30
+          epochs: 40
+          in_memory: true
+          initial_model:
+          label_smoothing: 0.1
+          learning_rate: 0.01
+          optimizer: sgd
+          num_workers: -1
+          output:
+            model_file: arandanos2.pkl
+            path: out_models
+          p_dropout: 0.5
+          unfreeze_epoch: 6
+          warmup: 3
+          weights_decay: 0.001
+          logname: prueba_dvc_mil_arandanos
+          augmentation:
+            random_rotation: 30
+            brightness:
+            - 0.8
+            - 1.4
+            contrast:
+            - 0.8
+            - 1.55
+            hue: 0.01
+            saturation: 0.15
+            blur:
+            - 0.1
+            - 1.5
+            affine:
+              scale:
+              - 0.7
+              - 1.1
+              shear: 15
+              translate:
+              - 0.15
+              - 0.15
+              degrees: 30
+    outs:
+    - path: out_models/arandanos2.pkl
+      hash: md5
+      md5: c5d2bef6b5946a8c3e13346519aa3318
+      size: 94445374
