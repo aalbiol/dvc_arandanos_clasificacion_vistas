@@ -6,8 +6,8 @@ data:
   - 110
   - 110
   delimiter: _
-  maxvalues:
-  - 255
+  maxvalues: 255
+  
   root_folder: data
   terminaciones: null # Para cimgs todos los canales van en un solo archivo .cimg
   channel_list:
@@ -157,7 +157,7 @@ evaluate:
 
 predict:
   model_dir: out_models
-  model_file: arandanos_lote1.pkl
+  model_file: arandanos2.pkl
   patron: "*.cimg"
   
   report_dir: out_predict
