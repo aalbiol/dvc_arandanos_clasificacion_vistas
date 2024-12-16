@@ -11,7 +11,18 @@ conda activate mscandvc
 
 # dvc_clasificacion_Arandanos
 
-Datos y pipelines para clasificar vistas de olivas
+Datos y pipelines para clasificar vistas de Arandanos con **anotaciones MIL**
+
+* Las imágenes de cada fruto están en un fichero CIMG.Cada fichero CIMG tiene 
+  * una lista de las vistas.
+
+  * las vistas pueden tener tamaños diferentes
+
+  * Las vistas pueden tener un número arbitrario de canales. En arándanos tienen 4 RGB-NIR
+
+* Las anotaciones no especifican en qué vistas se ve el defecto
+
+* Se podrían especificar nuevos CIMGS con una sola vista para indicar defectos específicos por vista
 
 # Para añadir remote webdav
 
@@ -52,10 +63,12 @@ ______________________________________________________
 ```
 conda activate mscandvc
 cd dvc_olivas_clasificacion_vistas
-python ../src_clasificacion_vistas/train/train.py --config config/config1.yaml
+python ../src_clasificacion_vistas/train/trainMIL.py --config config/config1.yaml
 ```
 
 ### Guadar modelo en DVC
+
+Si se utiliza *dvc repro* esto no es necesario
 
 ```
 dvc add out_models/modelo.pkl
@@ -76,18 +89,41 @@ También se calculan los aucs de cada tipo de defecto
 ```
 conda activate mscandvc
 cd dvc_olivas_clasificacion_vistas
-python ../src_clasificacion_vistas/evaluate/evaluate.py --config config/config1.yaml
+python ../src_clasificacion_vistas/evaluate/evaluateMIL .py config/config1.yaml
 ```
 
-## Para generar report a mano a mano
+## Para generar report a mano 
 
 Reejecuta todas las celdas de un cuaderno releyendo los ficheros con los scores de la última evaluación y actualiza el jupyter
 
 ```
 conda activate mscandvc
 cd dvc_olivas_clasificacion_vistas
-jupyter nbconvert --to notebook --execute --inplace reports/analisis_prestaciones.ipynb
+jupyter nbconvert --to notebook --execute  reports/analisis_prestaciones.ipynb
 ```
+
+## Para realizar inferencia a  mano
+
+La salida se guarda en ficheros json (uno por directorio) en out_predict
+```
+conda activate mscandvc
+cd dvc_olivas_clasificacion_vistas
+python ../src_clasificacion_vistas/evaluate/predictMIL .py config/config1.yaml directorio1 directorio2 directorio3
+```
+
+
+## Para generar reports a mano
+
+Reejecuta todas las celdas de un cuaderno releyendo los ficheros con los scores de la última evaluación y actualiza el jupyter
+
+```
+conda activate mscandvc
+cd dvc_olivas_clasificacion_vistas
+jupyter nbconvert --to notebook --execute  reports/analisis_prestaciones.ipynb
+```
+
+
+## Para 
 
 # Ejecución automática
 
