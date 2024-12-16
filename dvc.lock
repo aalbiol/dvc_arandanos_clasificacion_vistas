@@ -15,7 +15,6 @@ stages:
           training_size:
           - 110
           - 110
-          delimiter: _
           maxvalues: 255
           root_folder: data
           terminaciones:
@@ -95,99 +94,99 @@ stages:
     outs:
     - path: data/lote1/jsons/train_list.txt
       hash: md5
-      md5: 2710adbc5df902fffdd190d4d9cbe444
-      size: 21128
+      md5: 03d2b9f8b4429f26ed88f281639ffb08
+      size: 21117
     - path: data/lote1/jsons/val_list.txt
       hash: md5
-      md5: a8525a04a3bd870fd3fbeff5a411ffb0
-      size: 5331
+      md5: 224033c4b5a51923d068bbb6759345c4
+      size: 5342
     - path: data/lote2/20230419_100534_BuenoEncoder/jsons/train_list.txt
       hash: md5
-      md5: 92adab23a3d13b22f4117bc13afd9734
+      md5: 3795849ff5c141645441747321c27064
       size: 30073
     - path: data/lote2/20230419_100534_BuenoEncoder/jsons/val_list.txt
       hash: md5
-      md5: ccc24939fab64bcae29476a2c24db752
+      md5: d002d23ba22a1964e62dea133e1f2ad2
       size: 7564
     - path: data/lote2/20230419_112500_BuenoEncoder/jsons/train_list.txt
       hash: md5
-      md5: 23d3a8d767093780737fc0e7c88eb4e9
+      md5: 8e8611a9d792a93748339cd5711562ad
       size: 18788
     - path: data/lote2/20230419_112500_BuenoEncoder/jsons/val_list.txt
       hash: md5
-      md5: f5adbb0c5273c56b76dc632d05b8b219
+      md5: 008577296e672dd6a4c2b2164b49a222
       size: 4697
     - path: data/lote2/20230419_113002_LagrimaEncoder/jsons/train_list.txt
       hash: md5
-      md5: 4de85d5c8ef00ea6f420454a778051dc
+      md5: 742e4bf0fb82cfc89e6d5822c31f10e3
       size: 2268
     - path: data/lote2/20230419_113002_LagrimaEncoder/jsons/val_list.txt
       hash: md5
-      md5: 60596bdc77a4b6d814986fd7403c214a
+      md5: bb07c05aee0488af662910d7a226af0d
       size: 630
     - path: data/lote2/20230419_114356_CicatrizDefSupEncoder/jsons/train_list.txt
       hash: md5
-      md5: 95909aaa605b8c701e828436f015f57c
+      md5: ecff735742aed64d9b4853a5ed72722e
       size: 15400
     - path: data/lote2/20230419_114356_CicatrizDefSupEncoder/jsons/val_list.txt
       hash: md5
-      md5: c3f476ce79393fd9f21a44aa068d4dd2
+      md5: b04bb4af30306866458d27f343c45222
       size: 3920
     - path: data/lote2/20230419_115102_HojaRaboConDeformeEncoder/jsons/train_list.txt
       hash: md5
-      md5: 2ab4ab42ad23d868560ad065663e5f14
+      md5: 8b75542a72f8cf6cd2b61ef8feddab6d
       size: 20054
     - path: data/lote2/20230419_115102_HojaRaboConDeformeEncoder/jsons/val_list.txt
       hash: md5
-      md5: 1922ce82a0653a89c7d655b0094d897a
+      md5: 4ff105d26dce05c5a2485d7d9c063e9d
       size: 5032
     - path: data/lote2/20230419_115631_DestrioRotaEncoder/jsons/train_list.txt
       hash: md5
-      md5: 926fa5ce1198ca337c486704b0f5ab51
+      md5: f474679d71da111f758fb7fba6e0df86
       size: 1809
     - path: data/lote2/20230419_115631_DestrioRotaEncoder/jsons/val_list.txt
       hash: md5
-      md5: 8d311172676f2f55d17bacfc8b186fee
+      md5: 27ebab49315183912d0816bf1b3cd2f5
       size: 469
     - path: data/lote2/20230419_120236_DeformesDoblesEncoder/jsons/train_list.txt
       hash: md5
-      md5: b9ae8aeb21135b55b779732e87519b14
+      md5: f84c3338d0f0120d9514ea8b2dd2d943
       size: 2100
     - path: data/lote2/20230419_120236_DeformesDoblesEncoder/jsons/val_list.txt
       hash: md5
-      md5: 96956554398e563e5f5721369c9c4fb1
+      md5: 1c788a297fda539e34a7fe1a9fbbcb67
       size: 560
     - path: data/lote2/20230419_121536_BlandoEncoder/jsons/train_list.txt
       hash: md5
-      md5: 1b8c5e8a21f4d1a6fb1c03297587972b
+      md5: 9251fd1c442c93a37eb4386ed6f52ed0
       size: 4588
     - path: data/lote2/20230419_121536_BlandoEncoder/jsons/val_list.txt
       hash: md5
-      md5: 04189b84a585bb2f164253cbdaa15040
+      md5: 88960866009543351c5915980eb04821
       size: 1178
     - path: data/lote2/20230419_122046ArrugadoEncoder/jsons/train_list.txt
       hash: md5
-      md5: 6a64a063e3815c8904edbcd05ccd8a5c
+      md5: 0baa097c6be484508f7384a9b2156424
       size: 6867
     - path: data/lote2/20230419_122046ArrugadoEncoder/jsons/val_list.txt
       hash: md5
-      md5: bd8b378c215327831297021b37492356
+      md5: 7063c387beac7992c31783516a08511e
       size: 1764
     - path: data/lote2/20230419_122528_VerdeRojoEncoder/jsons/train_list.txt
       hash: md5
-      md5: eeb688cc0265dc5b8a2255c3dea690fc
+      md5: 53f2134a97f59e93b225db791f4be147
       size: 1885
     - path: data/lote2/20230419_122528_VerdeRojoEncoder/jsons/val_list.txt
       hash: md5
-      md5: d9cca64093816fd246643c4ce5e1b455
+      md5: 650dc32e02e5a889a169914b14ddbbe8
       size: 520
   train:
     cmd: python ../src_clasificacion_vistas/train/trainMIL.py --config config/config2.yaml
     deps:
     - path: ../src_clasificacion_vistas/train/trainMIL.py
       hash: md5
-      md5: 9f6c579e72675a6bb660b3d9d63b2b20
-      size: 5829
+      md5: 93446354f7bcbdc05b54e2667346c4c1
+      size: 5792
     params:
       config/config2.yaml:
         data:
@@ -196,7 +195,6 @@ stages:
           training_size:
           - 110
           - 110
-          delimiter: _
           maxvalues: 255
           root_folder: data
           terminaciones:
@@ -329,5 +327,158 @@ stages:
     outs:
     - path: out_models/arandanos2.pkl
       hash: md5
-      md5: 5d7b690be163842ea7ad6f1a62ce2144
-      size: 94445366
+      md5: 6211ecbbec82b6c310aee54928b0e30f
+      size: 94445305
+  evaluate:
+    cmd: python ../src_clasificacion_vistas/evaluate/evaluateMIL.py config/config2.yaml
+    deps:
+    - path: ../src_clasificacion_vistas/evaluate/evaluateMIL.py
+      hash: md5
+      md5: 44f76f37dac300cb62efc372d12ca94f
+      size: 8865
+    - path: out_models/arandanos2.pkl
+      hash: md5
+      md5: 6211ecbbec82b6c310aee54928b0e30f
+      size: 94445305
+    params:
+      config/config2.yaml:
+        data:
+          prob_train: 0.8
+          crop_size:
+          training_size:
+          - 110
+          - 110
+          maxvalues: 255
+          root_folder: data
+          terminaciones:
+          channel_list:
+          - 0
+          - 1
+          - 2
+          - 3
+          train:
+          - - train_list.txt
+            - lote1/jsons
+            - lote1/images
+          - - train_list.txt
+            - lote2/20230419_100534_BuenoEncoder/jsons
+            - lote2/20230419_100534_BuenoEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_112500_BuenoEncoder/jsons
+            - lote2/20230419_112500_BuenoEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_113002_LagrimaEncoder/jsons
+            - lote2/20230419_113002_LagrimaEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_114356_CicatrizDefSupEncoder/jsons
+            - lote2/20230419_114356_CicatrizDefSupEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_115102_HojaRaboConDeformeEncoder/jsons
+            - lote2/20230419_115102_HojaRaboConDeformeEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_115631_DestrioRotaEncoder/jsons
+            - lote2/20230419_115631_DestrioRotaEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_120236_DeformesDoblesEncoder/jsons
+            - lote2/20230419_120236_DeformesDoblesEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_122046ArrugadoEncoder/jsons
+            - lote2/20230419_122046ArrugadoEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_121536_BlandoEncoder/jsons
+            - lote2/20230419_121536_BlandoEncoder/imags
+          - - train_list.txt
+            - lote2/20230419_122528_VerdeRojoEncoder/jsons
+            - lote2/20230419_122528_VerdeRojoEncoder/imags
+          val:
+          - - val_list.txt
+            - lote1/jsons
+            - lote1/images
+          - - val_list.txt
+            - lote2/20230419_100534_BuenoEncoder/jsons
+            - lote2/20230419_100534_BuenoEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_112500_BuenoEncoder/jsons
+            - lote2/20230419_112500_BuenoEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_113002_LagrimaEncoder/jsons
+            - lote2/20230419_113002_LagrimaEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_114356_CicatrizDefSupEncoder/jsons
+            - lote2/20230419_114356_CicatrizDefSupEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_115102_HojaRaboConDeformeEncoder/jsons
+            - lote2/20230419_115102_HojaRaboConDeformeEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_115631_DestrioRotaEncoder/jsons
+            - lote2/20230419_115631_DestrioRotaEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_120236_DeformesDoblesEncoder/jsons
+            - lote2/20230419_120236_DeformesDoblesEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_122046ArrugadoEncoder/jsons
+            - lote2/20230419_122046ArrugadoEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_121536_BlandoEncoder/jsons
+            - lote2/20230419_121536_BlandoEncoder/imags
+          - - val_list.txt
+            - lote2/20230419_122528_VerdeRojoEncoder/jsons
+            - lote2/20230419_122528_VerdeRojoEncoder/imags
+        evaluate:
+          model_dir: out_models
+          model_file: arandanos2.pkl
+          report_dir: out_evaluate
+          train_predictions: train_scores.json
+          val_predictions: val_scores.json
+          aucs: aucs.json
+        model:
+          defect_types:
+          - Blandos
+          - Cicatrices
+          - defectos_severos
+          - Deformes
+          - Deshidratado
+          - Flor_seca
+          - Lagrima
+          - Rabos
+          - Rojos
+          - Verdes
+          num_channels_input: 4
+          model_version: 50
+    outs:
+    - path: out_evaluate/aucs.json
+      hash: md5
+      md5: 68d483377f0024c7bc8d036e3cb0b6f7
+      size: 964
+    - path: out_evaluate/train_scores.json
+      hash: md5
+      md5: ee2896b3b20c733f0529941b540db9d1
+      size: 1556060
+    - path: out_evaluate/val_scores.json
+      hash: md5
+      md5: 1f49c3ac3c5f81059192846bf13492a1
+      size: 394661
+  report:
+    cmd: jupyter nbconvert --to notebook --execute reports/analisis_prestaciones.ipynb
+    deps:
+    - path: out_evaluate/aucs.json
+      hash: md5
+      md5: 68d483377f0024c7bc8d036e3cb0b6f7
+      size: 964
+    - path: out_evaluate/train_scores.json
+      hash: md5
+      md5: ee2896b3b20c733f0529941b540db9d1
+      size: 1556060
+    - path: out_evaluate/val_scores.json
+      hash: md5
+      md5: 1f49c3ac3c5f81059192846bf13492a1
+      size: 394661
+    - path: reports/analisis_prestaciones.ipynb
+      hash: md5
+      md5: 76805fc98bc0d460e9313ff8a10b5a35
+      size: 325958
+    outs:
+    - path: reports/analisis_prestaciones.nbconvert.ipynb
+      hash: md5
+      md5: f689d8899d3ee873d344e01d1b1b6134
+      size: 312831

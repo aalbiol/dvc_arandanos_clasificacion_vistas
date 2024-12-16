@@ -72,30 +72,30 @@ stages:
     outs:
     - out_models/arandanos2.pkl
 
-#   evaluate:
-#     cmd: python ../src_clasificacion_vistas/evaluate/evaluate.py --config config/config1.yaml
-#     deps:
-#     - ../src_clasificacion_vistas/evaluate/evaluate.py
-#     - out_models/olives_Multilabel_2022_2023_morada_negra.pkl    
-#     params:
-#     - config/config1.yaml:
-#       - data
-#       - evaluate
-#       - model 	
-#     outs:
-#     - out_evaluate/aucs.json
-#     - out_evaluate/train_scores.json
-#     - out_evaluate/val_scores.json
+  evaluate:
+    cmd: python ../src_clasificacion_vistas/evaluate/evaluateMIL.py config/config2.yaml 
+    deps:
+    - ../src_clasificacion_vistas/evaluate/evaluateMIL.py
+    - out_models/arandanos2.pkl
+    params:
+    - config/config2.yaml:
+      - data
+      - evaluate
+      - model 	
+    outs:
+    - out_evaluate/aucs.json
+    - out_evaluate/train_scores.json
+    - out_evaluate/val_scores.json
   
-#   report:
-#     cmd: jupyter nbconvert --to notebook --execute --inplace reports/analisis_prestaciones.ipynb
-#     deps:
-#     - reports/analisis_prestaciones.ipynb
-#     - out_evaluate/aucs.json
-#     - out_evaluate/train_scores.json
-#     - out_evaluate/val_scores.json    
-#     outs:
-#     - reports/analisis_prestaciones.ipynb
+  report:
+    cmd: jupyter nbconvert --to notebook --execute reports/analisis_prestaciones.ipynb
+    deps:
+    - reports/analisis_prestaciones.ipynb
+    - out_evaluate/aucs.json
+    - out_evaluate/train_scores.json
+    - out_evaluate/val_scores.json    
+    outs:
+    - reports/analisis_prestaciones.nbconvert.ipynb
 
 
   
