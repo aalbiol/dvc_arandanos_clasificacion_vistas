@@ -94,91 +94,91 @@ stages:
     outs:
     - path: data/lote1/jsons/train_list.txt
       hash: md5
-      md5: 03d2b9f8b4429f26ed88f281639ffb08
+      md5: 6d32bcfb8cab12b328950fe71c4fa123
       size: 21117
     - path: data/lote1/jsons/val_list.txt
       hash: md5
-      md5: 224033c4b5a51923d068bbb6759345c4
+      md5: 3e8afa0aa97f57bf0e31790d3c86a6c4
       size: 5342
     - path: data/lote2/20230419_100534_BuenoEncoder/jsons/train_list.txt
       hash: md5
-      md5: 3795849ff5c141645441747321c27064
+      md5: 5d6b89c8ac7779138ce660ad6fd29c53
       size: 30073
     - path: data/lote2/20230419_100534_BuenoEncoder/jsons/val_list.txt
       hash: md5
-      md5: d002d23ba22a1964e62dea133e1f2ad2
+      md5: 6f113cb8c98dbc68570d14bb68284881
       size: 7564
     - path: data/lote2/20230419_112500_BuenoEncoder/jsons/train_list.txt
       hash: md5
-      md5: 8e8611a9d792a93748339cd5711562ad
+      md5: 346447ec9d8ff94a5a347ecfa4dc4e79
       size: 18788
     - path: data/lote2/20230419_112500_BuenoEncoder/jsons/val_list.txt
       hash: md5
-      md5: 008577296e672dd6a4c2b2164b49a222
+      md5: 482e8e81d950a643dcb280eb2397c287
       size: 4697
     - path: data/lote2/20230419_113002_LagrimaEncoder/jsons/train_list.txt
       hash: md5
-      md5: 742e4bf0fb82cfc89e6d5822c31f10e3
+      md5: 1d0ab30a579b362fe52a9026311c82b7
       size: 2268
     - path: data/lote2/20230419_113002_LagrimaEncoder/jsons/val_list.txt
       hash: md5
-      md5: bb07c05aee0488af662910d7a226af0d
+      md5: 2ff77b3e68efe0dc635b17ad546cc8f0
       size: 630
     - path: data/lote2/20230419_114356_CicatrizDefSupEncoder/jsons/train_list.txt
       hash: md5
-      md5: ecff735742aed64d9b4853a5ed72722e
+      md5: c1ec11200d1f9cb2be7246efe3f00f04
       size: 15400
     - path: data/lote2/20230419_114356_CicatrizDefSupEncoder/jsons/val_list.txt
       hash: md5
-      md5: b04bb4af30306866458d27f343c45222
+      md5: 551e451dbc97a5b83821f755d518af8e
       size: 3920
     - path: data/lote2/20230419_115102_HojaRaboConDeformeEncoder/jsons/train_list.txt
       hash: md5
-      md5: 8b75542a72f8cf6cd2b61ef8feddab6d
+      md5: 9ae912216f4a4e83786b99fd038229be
       size: 20054
     - path: data/lote2/20230419_115102_HojaRaboConDeformeEncoder/jsons/val_list.txt
       hash: md5
-      md5: 4ff105d26dce05c5a2485d7d9c063e9d
+      md5: d11f8b9762a50c553a9035c635cca48e
       size: 5032
     - path: data/lote2/20230419_115631_DestrioRotaEncoder/jsons/train_list.txt
       hash: md5
-      md5: f474679d71da111f758fb7fba6e0df86
+      md5: 5e99b7dee3f11fb3f9dec2ada117bac9
       size: 1809
     - path: data/lote2/20230419_115631_DestrioRotaEncoder/jsons/val_list.txt
       hash: md5
-      md5: 27ebab49315183912d0816bf1b3cd2f5
+      md5: e1ff371d32cdeac6eed6ac47f2da4137
       size: 469
     - path: data/lote2/20230419_120236_DeformesDoblesEncoder/jsons/train_list.txt
       hash: md5
-      md5: f84c3338d0f0120d9514ea8b2dd2d943
+      md5: 345659414263936ef0ccaae0e041782c
       size: 2100
     - path: data/lote2/20230419_120236_DeformesDoblesEncoder/jsons/val_list.txt
       hash: md5
-      md5: 1c788a297fda539e34a7fe1a9fbbcb67
+      md5: c0564e68dbbada96c09d3436d0c82b92
       size: 560
     - path: data/lote2/20230419_121536_BlandoEncoder/jsons/train_list.txt
       hash: md5
-      md5: 9251fd1c442c93a37eb4386ed6f52ed0
+      md5: 73ba65b77afb81970bd10721dfe16a5c
       size: 4588
     - path: data/lote2/20230419_121536_BlandoEncoder/jsons/val_list.txt
       hash: md5
-      md5: 88960866009543351c5915980eb04821
+      md5: a50d00151c10409f2069859f563bc10f
       size: 1178
     - path: data/lote2/20230419_122046ArrugadoEncoder/jsons/train_list.txt
       hash: md5
-      md5: 0baa097c6be484508f7384a9b2156424
+      md5: fc3aadeb7bab5f84f54fb29c0701bbef
       size: 6867
     - path: data/lote2/20230419_122046ArrugadoEncoder/jsons/val_list.txt
       hash: md5
-      md5: 7063c387beac7992c31783516a08511e
+      md5: 43a64b9e8186c9c8fb2d1c791f01bf69
       size: 1764
     - path: data/lote2/20230419_122528_VerdeRojoEncoder/jsons/train_list.txt
       hash: md5
-      md5: 53f2134a97f59e93b225db791f4be147
+      md5: 470860e6031809c9f137599ad7dad23d
       size: 1885
     - path: data/lote2/20230419_122528_VerdeRojoEncoder/jsons/val_list.txt
       hash: md5
-      md5: 650dc32e02e5a889a169914b14ddbbe8
+      md5: f993ad880e09f2b1130768e6b4b63772
       size: 520
   train:
     cmd: python ../src_clasificacion_vistas/train/trainMIL.py --config config/config2.yaml
@@ -327,7 +327,7 @@ stages:
     outs:
     - path: out_models/arandanos2.pkl
       hash: md5
-      md5: 6211ecbbec82b6c310aee54928b0e30f
+      md5: 520573f342011dff3db2a4b25d32b199
       size: 94445305
   evaluate:
     cmd: python ../src_clasificacion_vistas/evaluate/evaluateMIL.py config/config2.yaml
@@ -338,7 +338,7 @@ stages:
       size: 8865
     - path: out_models/arandanos2.pkl
       hash: md5
-      md5: 6211ecbbec82b6c310aee54928b0e30f
+      md5: 520573f342011dff3db2a4b25d32b199
       size: 94445305
     params:
       config/config2.yaml:
@@ -448,31 +448,31 @@ stages:
     outs:
     - path: out_evaluate/aucs.json
       hash: md5
-      md5: 68d483377f0024c7bc8d036e3cb0b6f7
+      md5: 8d1a3fd52e57fc10273507c2c9d8032f
       size: 964
     - path: out_evaluate/train_scores.json
       hash: md5
-      md5: ee2896b3b20c733f0529941b540db9d1
-      size: 1556060
+      md5: 3e3f6a63d3975dc4fe30c6041d28e468
+      size: 1556048
     - path: out_evaluate/val_scores.json
       hash: md5
-      md5: 1f49c3ac3c5f81059192846bf13492a1
-      size: 394661
+      md5: a9a1cafc21ff05330d5bab0f837b8354
+      size: 394605
   report:
     cmd: jupyter nbconvert --to notebook --execute reports/analisis_prestaciones.ipynb
     deps:
     - path: out_evaluate/aucs.json
       hash: md5
-      md5: 68d483377f0024c7bc8d036e3cb0b6f7
+      md5: 8d1a3fd52e57fc10273507c2c9d8032f
       size: 964
     - path: out_evaluate/train_scores.json
       hash: md5
-      md5: ee2896b3b20c733f0529941b540db9d1
-      size: 1556060
+      md5: 3e3f6a63d3975dc4fe30c6041d28e468
+      size: 1556048
     - path: out_evaluate/val_scores.json
       hash: md5
-      md5: 1f49c3ac3c5f81059192846bf13492a1
-      size: 394661
+      md5: a9a1cafc21ff05330d5bab0f837b8354
+      size: 394605
     - path: reports/analisis_prestaciones.ipynb
       hash: md5
       md5: 76805fc98bc0d460e9313ff8a10b5a35
@@ -480,5 +480,5 @@ stages:
     outs:
     - path: reports/analisis_prestaciones.nbconvert.ipynb
       hash: md5
-      md5: f689d8899d3ee873d344e01d1b1b6134
-      size: 312831
+      md5: aa6a60121a2bb4d6ae2ab596ef44af65
+      size: 314165
