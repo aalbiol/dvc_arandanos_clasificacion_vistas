@@ -40,6 +40,32 @@ dvc remote modify --local rasp4remote user dvcremote
 dvc remote modify --local rasp4remote password Cocentaina
 ```
 
+# Para añadir remoto S3
+
+## Introducir key y secret y verificar
+* Instalar AWS CLI
+* Configurar
+```
+aws configure
+```
+Introducir key y secret y dejar resto en blanco
+
+Para probar
+```
+aws s3 ls s3://msc-dev-datalake/datasets/
+```
+debe imprimir una lista de datasets
+* blueberry
+* olives
+* orange
+* tomato
+* ...
+
+## Añadir remoto S3
+```
+dvc remote add -d blueberry_s3  s3://msc-dev-datalake/datasets/blueberry
+```
+
 
 
 
