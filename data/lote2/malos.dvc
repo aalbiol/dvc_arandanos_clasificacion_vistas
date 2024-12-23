@@ -1,0 +1,6 @@
+outs:
+- md5: 1b2c4df9f2b6b81c8c07cf62a8c57b5b.dir
+  size: 785301514
+  nfiles: 37257
+  hash: md5
+  path: malos
