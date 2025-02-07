@@ -9,7 +9,7 @@ data:
   maxvalues: 255
   
   root_folder: data
-  terminaciones: null # Para cimgs todos los canales van en un solo archivo .cimg
+  terminaciones: ".cimg" # Para cimgs todos los canales van en un solo archivo .cimg
   channel_list:
   - 0 #R
   - 1 #G
