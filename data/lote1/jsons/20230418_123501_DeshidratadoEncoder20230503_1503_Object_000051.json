@@ -10,7 +10,6 @@
         "Rojos": "0",
         "Rabos": "0",
         "Rajas": "0",
-        "Rojos": "0",
         "Verdes": "0",
         "defectos_severos": "0"
     },
@@ -19,5 +18,7 @@
     "batchType": "Type",
     "files": {
         "1": "20230418_123501_DeshidratadoEncoder20230503_1503_Object_000051.png"
-    }
+    },
+    "channels": "R;G;B;NIR",
+    "maxValChannels": 1023.0
 }

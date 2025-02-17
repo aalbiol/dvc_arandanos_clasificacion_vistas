@@ -19,5 +19,7 @@
     "files": {
         "0": "20230419_115102_HojaRaboConDeformeEncoder20230524_1632_Object_000264.cimg",
         "1": "20230419_115102_HojaRaboConDeformeEncoder20230524_1632_Object_000264.png"
-    }
+    },
+    "channels": "R;G;B;NIR",
+    "maxValChannels": 1023.0
 }

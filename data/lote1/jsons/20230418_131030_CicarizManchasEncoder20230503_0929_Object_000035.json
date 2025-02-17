@@ -10,7 +10,6 @@
         "Rojos": "0",
         "Rabos": "0",
         "Rajas": "0",
-        "Rojos": "0",
         "Verdes": "0",
         "defectos_severos": "0"
     },
@@ -19,5 +18,7 @@
     "batchType": "Type",
     "files": {
         "1": "20230418_131030_CicarizManchasEncoder20230503_0929_Object_000035.png"
-    }
+    },
+    "channels": "R;G;B;NIR",
+    "maxValChannels": 1023.0
 }

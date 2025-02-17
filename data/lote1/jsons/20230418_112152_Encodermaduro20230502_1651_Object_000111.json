@@ -7,10 +7,9 @@
         "Dobles": "0",
         "Flor_seca": "0",
         "Lagrima": "0",
-        "Rojos": "0",
+        "Rojos": "1",
         "Rabos": "0",
         "Rajas": "0",
-        "Rojos": "1",
         "Verdes": "0",
         "defectos_severos": "0"
     },
@@ -19,5 +18,7 @@
     "batchType": "Type",
     "files": {
         "1": "20230418_112152_Encodermaduro20230502_1651_Object_000111.png"
-    }
+    },
+    "channels": "R;G;B;NIR",
+    "maxValChannels": 1023.0
 }

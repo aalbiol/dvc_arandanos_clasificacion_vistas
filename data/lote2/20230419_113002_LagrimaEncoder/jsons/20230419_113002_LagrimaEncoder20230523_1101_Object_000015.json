@@ -19,5 +19,7 @@
     "files": {
         "0": "20230419_113002_LagrimaEncoder20230523_1101_Object_000015.cimg",
         "1": "20230419_113002_LagrimaEncoder20230523_1101_Object_000015.png"
-    }
+    },
+    "channels": "R;G;B;NIR",
+    "maxValChannels": 1023.0
 }

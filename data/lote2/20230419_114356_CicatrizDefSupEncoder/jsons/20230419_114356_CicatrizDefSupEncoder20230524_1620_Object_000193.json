@@ -19,5 +19,7 @@
     "files": {
         "0": "20230419_114356_CicatrizDefSupEncoder20230524_1620_Object_000193.cimg",
         "1": "20230419_114356_CicatrizDefSupEncoder20230524_1620_Object_000193.png"
-    }
+    },
+    "channels": "R;G;B;NIR",
+    "maxValChannels": 1023.0
 }

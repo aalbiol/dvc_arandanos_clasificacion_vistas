@@ -18,5 +18,7 @@
     "batchType": "Type",
     "files": {
         "1": "20230418_131853_DefectoSeveroEncoder20230503_1025_Object_000012.png"
-    }
+    },
+    "channels": "R;G;B;NIR",
+    "maxValChannels": 1023.0
 }

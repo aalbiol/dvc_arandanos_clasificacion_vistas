@@ -19,5 +19,7 @@
     "files": {
         "0": "20230419_120236_DeformesDoblesEncoder20230529_1041_Object_000034.cimg",
         "1": "20230419_120236_DeformesDoblesEncoder20230529_1041_Object_000034.png"
-    }
+    },
+    "channels": "R;G;B;NIR",
+    "maxValChannels": 1023.0
 }

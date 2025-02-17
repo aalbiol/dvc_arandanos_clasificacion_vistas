@@ -19,5 +19,7 @@
     "files": {
         "0": "20230419_100534_BuenoEncoder20230522_1616_Object_000175.cimg",
         "1": "20230419_100534_BuenoEncoder20230522_1616_Object_000175.png"
-    }
+    },
+    "channels": "R;G;B;NIR",
+    "maxValChannels": 1023.0
 }
